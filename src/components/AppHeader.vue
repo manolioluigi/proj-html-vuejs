@@ -140,37 +140,8 @@
     @use '../styles/partials/variables.scss' as *;
     @use '../styles/partials/mixins.scss' as *;
 
-    .purple{
-        color: $purple;
-    }
-
-    .gray{
-        color: $gray;
-    }
-
-    .font-size-14{
-        font-size: 14px;
-    }
-
-    .font-size-16{
-        font-size: 16px;
-    }
-
-    .font-size-12{
-        font-size: 12px;
-    }
-
     img{
         max-height: 9vh;
-    }
-
-    .relative{
-        position: relative;
-    }
-
-    .absolute{
-        position: absolute;
-        z-index: 999;
     }
 
     .underline{
