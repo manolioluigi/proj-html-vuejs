@@ -1,6 +1,7 @@
     @use '../styles/partials/variables.scss' as *;
     @use '../styles/partials/mixins.scss' as *;
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap');
     @import 'node_modules/bootstrap/scss/bootstrap.scss';
     @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -8,7 +9,7 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Work Sans', sans-serif;
     }
 
     #app {
@@ -22,4 +23,12 @@
 
     .row {
         width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
     }
