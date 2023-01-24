@@ -149,9 +149,18 @@
 
         </div>
 
-        <div>
-            <AppImageOverlay :secondImage="this.imageOverlay[1]"></AppImageOverlay>
+        <div class="row">
+            <div class="col-6">
+                <AppImageOverlay :secondImage="this.imageOverlay[1]"></AppImageOverlay>
+            </div>
+            <div class="col-6 bg-lilac content-right">
+                <span class="gray font-size-12">DONT JUST TAKE OUR WORD FOR IT</span>
+                <h1 class="my-2" id="my-h1">“Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity.”</h1>
+                <span class="gray font-size-12">Rachel Cooper, Founder</span>
+            </div>
         </div>
+
+        
 
     </div>
 
@@ -221,6 +230,18 @@
 
     .padding-10{
         padding: 0 10px;
+    }
+
+    #my-h1{
+        font-size: 45px;
+    }
+
+    .content-right{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        padding: 50px;
     }
 
 </style>
