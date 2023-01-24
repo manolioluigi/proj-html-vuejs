@@ -38,7 +38,7 @@
 
             <div class="col-8">
 
-                carosello
+                <AppCarousel></AppCarousel>
 
             </div>
 
