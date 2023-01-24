@@ -43,6 +43,10 @@
         color: $gray;
     }
 
+    .white {
+        color: $white;
+    }
+
     .font-size-14 {
         font-size: 14px;
     }
@@ -62,4 +66,12 @@
     .absolute {
         position: absolute;
         z-index: 999;
+    }
+
+    .no-padding {
+        padding: 0;
+    }
+
+    .text-center {
+        text-align: center;
     }
