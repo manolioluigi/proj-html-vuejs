@@ -342,6 +342,11 @@
         width: fit-content;
         padding: 10px 25px;
         border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            color: $purple;
+            background-color: $white;
+        }
     }
 
     .container-vertical-cards{
@@ -351,7 +356,7 @@
             object-fit: cover;
         }
         &:hover .on-top{
-            display: block;
+            opacity: 1;
         }
         &:hover .more-on-top{
             opacity: 1;
@@ -364,7 +369,8 @@
         top: 0;
         left: 0;
         z-index: 99;
-        display: none;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
     }
 
     .more-on-top{
@@ -406,10 +412,16 @@
     .img-container{
         width: 100%;
         height: 40vh;
+        overflow: hidden;
+        
         img{
             width: 100%;
             height: 40vh;
             object-fit: cover;
+            transition: all 1.5s ease-in-out;
+        }
+        &:hover img{
+            scale: 1.5;
         }
     }
 

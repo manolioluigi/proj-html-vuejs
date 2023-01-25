@@ -111,7 +111,7 @@
         max-width: 48%;
 
         &:hover .text{
-            display: block;
+            opacity: 1;
             background-color: rgba(86, 50, 139, 0.507);
         }
 
@@ -126,7 +126,8 @@
             text-align: center;
             padding-top: 50%;
             color: $white;
-            display: none;
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
             h3{
                 font-size: 25px;
             }

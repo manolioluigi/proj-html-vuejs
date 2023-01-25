@@ -126,7 +126,7 @@
                 <p class="darkgray font-size-12">FRESH & TASTY BAKERY EVERY DAY</p>
                 <h1>The Perfect Fresh Bread</h1>
                 <p class="darkgray font-size-16">Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Aliquam erat volutpat. Nullam quis sagittis nibh ac nulla id orci tempor.</p>
-                <div class="darkgray font-size-14 mt-5 mx-4">Explore our products</div>
+                <div class="white-button">Explore our products</div>
 
             </div>
 
@@ -176,6 +176,20 @@
         top: 0;
         background-color: $white;
         z-index: 999;
+    }
+
+    .white-button{
+        background-color: $white;
+        color: $purple;
+        width: fit-content;
+        padding: 15px 40px;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        &:hover{
+            color: $white;
+            background-color: $purple;
+        }
     }
 
 </style>

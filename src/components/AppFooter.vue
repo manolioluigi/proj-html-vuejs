@@ -69,11 +69,11 @@
                     <div class="purple-button">Subscribe</div>
                 </div>
                 <div class="social">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter mx-3"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-pinterest mx-3"></i>
-                    <i class="fa-brands fa-youtube"></i>
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div class=" mx-2"><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div class=" mx-2"><i class="fa-brands fa-pinterest"></i></div>
+                    <div><i class="fa-brands fa-youtube"></i></div>
                 </div>
 
             </div>
@@ -131,6 +131,11 @@
         padding: 15px 40px;
         border-radius: 10px;
         font-size: 18px;
+        cursor: pointer;
+        &:hover{
+            color: $white;
+            background-color: $purple;
+        }
     }
 
     .purple-button{
@@ -139,6 +144,11 @@
         width: fit-content;
         padding: 10px 25px;
         border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            color: $purple;
+            background-color: $white;
+        }
     }
 
     .col-7 img{
@@ -156,8 +166,19 @@
         display: flex;
         justify-content: end;
         margin: 10% 13% 0 0;
-        font-size: 25px;
+        font-size: 20px;
         color: $purple;
+        div{
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        div:hover{
+            background-color: $gray;
+        }
     }
 
     .navbar{
