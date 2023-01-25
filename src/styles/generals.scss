@@ -43,12 +43,20 @@
         color: $gray;
     }
 
+    .darkgray {
+        color: $darkgray;
+    }
+
     .white {
         color: $white;
     }
 
     .bg-lilac {
         background-color: $lilac;
+    }
+
+    .bg-lightpurple {
+        background-color: $lightpurple;
     }
 
     .font-size-14 {
@@ -76,6 +84,19 @@
         padding: 0;
     }
 
+    .no-margin-sides {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .text-center {
         text-align: center;
+    }
+
+    .width-full {
+        width: 100%;
+    }
+
+    .width-full-vw {
+        width: 100vw;
     }

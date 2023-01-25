@@ -69,11 +69,11 @@
 
 <template>
   
-    <div class="container-fluid">
+    <div class="container-fluid no-padding">
 
         <!--prima riga-->
 
-        <div class="row">
+        <div class="row no-margin-sides">
 
             <div class="col-12 d-flex justify-content-center">
 
@@ -85,7 +85,7 @@
         
         <!--seconda riga-->
 
-        <div class="row absolute font-size-12 purple d-flex justify-content-between px-3 py-2" :class="(this.scroll > 70 && this.scroll < 400) ? 'fixed' : ''">
+        <div class="row absolute font-size-12 purple d-flex justify-content-between px-3 py-2 no-margin-sides" :class="(this.scroll > 70 && this.scroll < 400) ? 'fixed' : ''">
 
             <div class="col-3 d-flex align-items-center">
 
@@ -119,14 +119,14 @@
 
         <!--terza riga-->
         
-        <div class="row jumbo">
+        <div class="row jumbo no-margin-sides">
 
             <div class="col-3 m-5">
 
-                <p class="gray font-size-12">FRESH & TASTY BAKERY EVERY DAY</p>
+                <p class="darkgray font-size-12">FRESH & TASTY BAKERY EVERY DAY</p>
                 <h1>The Perfect Fresh Bread</h1>
-                <p class="gray font-size-16">Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Aliquam erat volutpat. Nullam quis sagittis nibh ac nulla id orci tempor.</p>
-                <div class="gray font-size-14 mt-5 mx-4">Explore our products</div>
+                <p class="darkgray font-size-16">Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Aliquam erat volutpat. Nullam quis sagittis nibh ac nulla id orci tempor.</p>
+                <div class="darkgray font-size-14 mt-5 mx-4">Explore our products</div>
 
             </div>
 
@@ -154,10 +154,11 @@
     }
 
     .jumbo{
-        height: 80vh;
-        padding-top: 10vh;
+        width: 100%;
+        height: 90vh;
+        padding-top: 20vh;
         background-image: url("../assets/img/hero-header-bakery.jpg");
-        background-size: 150%;
+        background-size: 160%;
         background-position: bottom;
         background-repeat: no-repeat;
         position: relative;

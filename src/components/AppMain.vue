@@ -59,7 +59,7 @@
 
             <div class="col-4">
 
-                <p class="gray font-size-12">OUR PRODUCTS</p>
+                <p class="darkgray font-size-12">OUR PRODUCTS</p>
                 <h1 class="my-4">All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.</h1>
                 <div class="purple-button font-size-14 my-5">Buy Avada Today</div>
 
@@ -79,7 +79,7 @@
 
             <div class="col-12 d-flex flex-column align-items-center my-5">
 
-                <p class="gray font-size-12">CORPORATE & WEDDINGS</p>
+                <p class="darkgray font-size-12">CORPORATE & WEDDINGS</p>
                 <h1 class="my-3">Baking Special Moments</h1>
 
             </div>
@@ -149,18 +149,177 @@
 
         </div>
 
+        <!--sesta riga-->
+
         <div class="row">
             <div class="col-6">
                 <AppImageOverlay :secondImage="this.imageOverlay[1]"></AppImageOverlay>
             </div>
             <div class="col-6 bg-lilac content-right">
-                <span class="gray font-size-12">DONT JUST TAKE OUR WORD FOR IT</span>
+                <span class="darkgray font-size-12">DONT JUST TAKE OUR WORD FOR IT</span>
                 <h1 class="my-2" id="my-h1">“Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity.”</h1>
-                <span class="gray font-size-12">Rachel Cooper, Founder</span>
+                <span class="darkgray font-size-12">Rachel Cooper, Founder</span>
             </div>
         </div>
 
-        
+        <!--settima riga-->
+
+        <div class="row">
+
+            <div class="col-12">
+                
+                <AppImageOverlay class="my-5" :thirdImage="this.imageOverlay[2]"></AppImageOverlay>
+                
+            </div>
+
+        </div>
+
+        <!--ottava righa-->
+
+        <div class="row my-5">
+
+            <div class="col-12 d-flex flex-column align-items-center">
+
+                <span class="darkgray font-size-12">LOCATIONS</span>
+                <h1 class="my-2">Visit our Bakeries</h1>
+
+            </div>
+
+        </div>
+
+        <!--nona riga-->
+
+        <div class="row mt-5">
+
+            <div class="col-6 no-padding">
+
+                <div class="img-container">
+                    <img src="../assets/img/new-york-bk.jpg">
+                </div>
+
+            </div>
+
+            <div class="col-6 no-padding">
+
+                <div class="img-container">
+                    <img src="../assets/img/london-bk.jpg">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--decima riga-->
+
+        <div class="row">
+
+            <div class="col-6 py-5 d-flex flex-column justify-content-center align-items-center bg-lightpurple">
+
+                <h1 class="mb-2">New York</h1>
+                <div class="d-flex justify-content-around text-center align-items-center width-full darkgray">
+                    <div>
+                        <span class="darkgray font-size-12">CALL US</span>
+                        <p>1.800.458.556</p>
+                    </div>
+                    <div>
+                        <span class="darkgray font-size-12">OPEN ALL WEEK</span>
+                        <p>9:00 AM - 6:00 PM</p>
+                    </div>
+                    <p>View Map</p>
+                </div>
+
+            </div>
+
+            <div class="col-6 py-5 d-flex flex-column justify-content-center align-items-center bg-lilac">
+
+                <h1 class="mb-2">London</h1>
+                <div class="d-flex justify-content-around text-center align-items-center width-full darkgray">
+                    <div>
+                        <span class="font-size-12">CALL US</span>
+                        <p>1.800.458.556</p>
+                    </div>
+                    <div>
+                        <span class="font-size-12">OPEN ALL WEEK</span>
+                        <p>9:00 AM - 6:00 PM</p>
+                    </div>
+                    <p>View Map</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--undicesima riga-->
+
+        <div class="row mt-5">
+
+            <div class="col-3">
+
+                <div class="img-container">
+
+                    <img src="../assets/img/social-1.jpg">
+
+                </div>
+
+            </div>
+
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+
+                <span class="darkgray font-size-12">MADE FOR SHARING</span>
+                <h1 class="mb-2">Let's stay in touch</h1>
+                <div class="purple-button"><i class="fa-brands fa-instagram"></i> Follow Us</div>
+            
+            </div>
+
+            <div class="col-3">
+                <div class="img-container">
+
+                    <img src="../assets/img/social-2.jpg">
+
+                </div>
+            </div> 
+
+        </div>
+
+        <!--dodicesima riga-->
+
+        <div class="row my-4">
+
+            <div class="col-3">
+
+                <div class="img-container">
+
+                    <img src="../assets/img/social-3.jpg">
+
+                </div>
+
+            </div>
+
+            <div class="col-3">
+                <div class="img-container">
+
+                    <img src="../assets/img/social-5.jpg">
+
+                </div>
+            </div> 
+
+            <div class="col-3">
+                <div class="img-container">
+
+                    <img src="../assets/img/social-4.jpg">
+
+                </div>
+            </div> 
+
+            <div class="col-3">
+                <div class="img-container">
+
+                    <img src="../assets/img/social-6.jpg">
+
+                </div>
+            </div> 
+
+        </div>
 
     </div>
 
@@ -242,6 +401,16 @@
         flex-direction: column;
         
         padding: 50px;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 40vh;
+        img{
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+        }
     }
 
 </style>

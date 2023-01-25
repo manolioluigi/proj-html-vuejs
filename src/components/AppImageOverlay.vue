@@ -8,7 +8,8 @@
         },
         props: {
             firstImage: Object,
-            secondImage: Object
+            secondImage: Object,
+            thirdImage: Object,
         },
         
     }
@@ -19,7 +20,7 @@
     <div>
         
         <div class="my-image-container" v-if="firstImage">
-            <img :src="firstImage.url">
+            <img class="object-left" :src="firstImage.url">
             <div class="first-content">
                 <div class="d-flex justify-content-between">
                     <div class="title">
@@ -37,7 +38,7 @@
         </div>
 
         <div class="my-image-container" v-if="secondImage">
-            <img :src="secondImage.url">
+            <img class="object-right" :src="secondImage.url">
             <div class="second-content">
                 <div class="d-flex justify-content-between">
                     <div class="title">
@@ -49,6 +50,24 @@
                     <div class="desc">
                         <span class="my-2 gray font-size-12">{{ secondImage.descTitle }}</span>
                         <p class="my-3">{{ secondImage.desc }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-image-container" v-if="thirdImage">
+            <img class="object-center" :src="thirdImage.url">
+            <div class="first-content">
+                <div class="d-flex justify-content-between">
+                    <div class="title">
+                        <h1>{{ thirdImage.title }}</h1>
+                    </div>
+                    <span class="number">{{ thirdImage.number }}</span>
+                </div>
+                <div class="d-flex justify-content-start">
+                    <div class="desc">
+                        <span class="my-2 gray font-size-12">{{ thirdImage.descTitle }}</span>
+                        <p>{{ thirdImage.desc }}</p>
                     </div>
                 </div>
             </div>
@@ -70,7 +89,18 @@
             max-width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .object-left{
             object-position: left;
+        }
+
+        .object-right{
+            object-position: right;
+        }
+
+        .object-center{
+            object-position: middle;
         }
 
         .first-content{
